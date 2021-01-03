@@ -1,0 +1,133 @@
+
+  body,html {
+    margin: 0;
+    padding: 0;
+    background: url("../images/drum-kit_background.png") no-repeat top center fixed;
+    text-align: center;
+    font-family: Exo;
+    color: rgb(187, 202, 202);
+  }
+
+/* Block dividers */
+
+hr {
+    margin: 0 auto;
+    width: 75px;
+    height: 5px;
+    border: 0;
+    background-color: #f05f40;
+}
+
+
+
+/* Navbar */
+
+.topnav {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.25);
+    height: 2rem;
+}
+
+.navicon {
+    font-weight: bolder;
+    font-size: 28px;
+    font-style: italic;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: azure;
+}
+
+
+h2 {
+    font-weight: 700;
+    font-style: italic;
+    font-size: xx-large;
+    margin: 30px;
+}
+
+p {
+    font-weight: 400;
+    font-style: oblique;
+    font-size: medium;
+    text-shadow: black;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+p > a {
+    text-decoration: none;
+    color: rgb(187, 202, 202);
+}
+
+p > a:hover {
+    color: crimson;
+}
+
+
+/******** Keys ******/
+
+
+.flex-container {
+    /* We first create a flex layout context */
+ display: flex;
+ 
+ /* Then we define the flow direction 
+    and if we allow the items to wrap 
+  * Remember this is the same as:
+  * flex-direction: row;
+  * flex-wrap: wrap;
+  */
+ flex-flow: row wrap;
+ 
+ /* Then we define how is distributed the remaining space */
+ justify-content: space-around;
+
+ margin-top: 30px;
+
+}
+
+
+
+/******** Keys ******/
+
+.keys {
+ display: flex;
+ flex: 1;
+ align-items: center;
+ justify-content: center;
+}
+
+.key {
+ border: .4rem solid black;
+ border-radius: .5rem;
+ margin: .2rem;
+ font-size: 0.7rem;
+ padding: .7rem;
+ transition: all .07s ease;
+ width: 5rem;
+ text-align: center;
+ color: white;
+ background: rgba(0,0,0,0.4);
+ text-shadow: 0 0 .5rem black;
+}
+
+.playing {
+ transform: scale(1.1);
+ border-color: #ffc600;
+ box-shadow: 0 0 1rem #ffc600;
+}
+
+kbd {
+ display: block;
+ font-size: 3rem;
+}
+
+.sound {
+ font-size: 1.1rem;
+ text-transform: uppercase;
+ letter-spacing: .1rem;
+ color: #ffc600;
+}
